@@ -1,8 +1,32 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 main{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+.toastr{
+    display: none;
+    position: absolute;
+    min-width: 25rem;
+    min-height: 2rem;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    bottom: 4rem;
+    right: 2rem;
+}
+
+.toastr.success{
+    background-color: #34C026;
+    border: 2px solid #32D321;
+    color: #0A4104;
+}
+
+.toastr.error{
+    background-color: #ED3F46;
+    border: 2px solid #ED1C25;
+    color: #600509;
 }
